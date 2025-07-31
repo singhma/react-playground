@@ -1,7 +1,5 @@
-import React from 'https://esm.sh/react@19.1.0';
-import ReactDOM from 'https://esm.sh/react-dom@19.1.0/client';
-
-
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 // Build html element using Javascript
 // const heading = document.createElement("h1")

@@ -1,25 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// Build html element using Javascript
-// const heading = document.createElement("h1")
-// heading.innerHTML = "Hello world from Javascript";
-// const root = document.getElementById("root");
-// root.appendChild(headin
-// Build html element using React Element (ESM)
+// React Element ==> JS object ==> when this object is rendered ((replaced)) to DOM using (root.render)  ==> then it converts this object HTML Element
+const heading = React.createElement("h1",{"id":"heading"},"React Element created using `React.createElement i.e. core react`")
 
-
-// Single React Element
-// const heading = React.createElement("h1", {"id":"heading"}, "Hello world from React Element");
-
-// Nested React Components
-const nestedElements = React.createElement(
-    "div",
-    { id: "parent" },
-    React.createElement("div", { id: "child" }, [
-        React.createElement("h1", {}, "H1 Tag"),
-        React.createElement("h2", {}, "H2 Tag"),
-    ]
-    ));
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(nestedElements);
+// JSX ==> transpiled (by Babel) to React.CreateElement ==> JS object ==> when this object is rendered ((replaced)) to DOM using (root.render)  ==> then it converts this object HTML Element
+// == Javascript syntax or HTML / XML like syntax to create React 
+// == JSX in not HTML inside JS
+// JSX Heading
+const heading2 = <h2 id="heading2">React Element created using JSX syntax 🚀</h2>
+const root = ReactDOM.createRoot(document.getElementById('root'))
+console.log(heading)
+console.log(heading2)
+root.render(heading2)

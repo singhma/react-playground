@@ -1,9 +1,11 @@
 {
-  "name": "02-igniting-our-app",
+  "name": "03-laying-foundation",
   "version": "1.0.0",
   "description": "react playground",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "Mannal Singh",
   "license": "ISC",

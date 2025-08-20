@@ -1,11 +1,11 @@
 {
-  "name": "03-laying-foundation",
+  "name": "show-me-the-code",
   "version": "1.0.0",
   "description": "react playground",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
   },
   "author": "Mannal Singh",
   "license": "ISC",
